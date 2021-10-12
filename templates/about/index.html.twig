@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}À Propos de nous{% endblock %}
+
+{% block body %}
+    <div class="col-md-8">
+        <div class="about">
+            <p>Dans la section précédente, nous avoir construit la réponse en indiquant une chaîne de caractères en paramètre du constructeur de la classe Response. Si la réponse est plus complexe à construire, on utilisera un moteur de génération d’une page html à partir d’un modèle (template) de vues.
+
+                La réalisation des vues représente un travail important lors du développement d’une application web. Ce travail se décompose en deux parties :
+
+                Le style, l’organisation des données, ce que les spécialistes appellent la charte graphique, qui est réalisée par des graphistes. Une connaissance du langage CSS associée au langage de balises HTML est requise.
+                Insertion des données qui répondent à la requête. C’est le travail de l’informaticien de retrouver les informations, il utilise pour cela un langage de programmation (en particulier PHP).
+            </p>
+        </div>
+        <div class="about">
+            <p>
+                Un site web utilise, en général, une charte, un style qui est partagé par l’ensemble des pages. Il existe des librairies qui mettent en oeuvre ce qu’on appelle un moteur de templates. L’idée est de définir une charte dans un template (un modèle) et de permettre l’ajout de paramètres (similaire au format de la fonction sprintf() déjà utilisée, mais ici pour une page HTML).
+
+                Symfony utilise twig comme moteur de génération de vue (page html).
+
+                Afin d’intégrer plus facilement l’utilisation de twig dans les fonctions d’un contrôleur, nous allons utiliser comme classe ancêtre de notre contrôleur, la classe AbstractController.
+            </p>
+
+        </div>
+    </div>
+
+
+{% endblock %}
