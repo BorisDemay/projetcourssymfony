@@ -1,0 +1,27 @@
+<html lang="fr">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+{{ include('header.html.twig') }}
+
+<main role="main" class="container">
+    {% block main %}
+
+    {% endblock %}
+</main>
+
+{{ include('footer.html.twig') }}
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
