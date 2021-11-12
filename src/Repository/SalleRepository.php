@@ -47,4 +47,17 @@ class SalleRepository extends ServiceEntityRepository
         ;
     }
     */
+    public function findAllSalle(): array
+    {
+        $entityManager = $this->getEntityManager();
+
+        $query = $entityManager->createQuery(
+            'SELECT s
+            FROM App\Entity\Salle s
+            JOIN App\Entity\Location l'
+        );
+
+        // returns an array of Product objects
+        return $query->getResult();
+    }
 }
